@@ -2,101 +2,172 @@ const projects = [
   {
     name: "Project 1",
     description: "Description of Project 1",
-    image: "project1.jpg",
-    link: "project1.html",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project1.html",
     tags: ["JavaScript", "HTML", "CSS"],
     date: "2025-01-01",
     id: 1,
   },
   {
-    name: "Todo List App",
-    description: "A simple responsive todo list with persistence",
-    image: "todo.jpg",
-    link: "project2.html",
-    tags: ["JavaScript", "HTML", "CSS"],
-    date: "2024-05-12",
+    name: "Project 2",
+    description: "Description of Project 2",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project2.html",
+    tags: ["React", "CSS"],
+    date: "2025-02-01",
     id: 2,
   },
   {
-    name: "Weather Dashboard",
-    description: "Weather lookup using OpenWeatherMap API",
-    image: "weather.jpg",
-    link: "project3.html",
-    tags: ["JavaScript", "API", "HTML"],
-    date: "2023-09-01",
+    name: "Project 3",
+    description: "Description of Project 3",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project3.html",
+    tags: ["HTML", "CSS"],
+    date: "2025-03-01",
     id: 3,
   },
   {
-    name: "Real-time Chat App",
-    description: "Socket-based chat with rooms and message history",
-    image: "chat.jpg",
-    link: "project4.html",
-    tags: ["Node.js", "Socket.io", "Express"],
-    date: "2022-11-30",
+    name: "Project 4",
+    description: "Description of Project 4",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project4.html",
+    tags: ["Node.js", "Express"],
+    date: "2025-04-01",
     id: 4,
   },
   {
-    name: "E-commerce Mock",
-    description: "Product listing and shopping cart prototype",
-    image: "ecommerce.jpg",
-    link: "project5.html",
-    tags: ["React", "Redux", "CSS"],
-    date: "2024-02-20",
+    name: "Project 5",
+    description: "Description of Project 5",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project5.html",
+    tags: ["Python", "Flask"],
+    date: "2025-05-01",
     id: 5,
   },
   {
-    name: "Portfolio Template",
-    description: "A modern, responsive portfolio template",
-    image: "portfolio.jpg",
-    link: "project6.html",
-    tags: ["HTML", "CSS", "Bootstrap"],
-    date: "2021-07-15",
+    name: "Project 6",
+    description: "Description of Project 6",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project6.html",
+    tags: ["Django", "Python"],
+    date: "2025-06-01",
     id: 6,
   },
   {
-    name: "Data Visualizer",
-    description: "Interactive charts and visualizations with D3.js",
-    image: "dataviz.jpg",
-    link: "project7.html",
-    tags: ["D3.js", "JavaScript"],
-    date: "2023-12-10",
+    name: "Project 7",
+    description: "Description of Project 7",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project7.html",
+    tags: ["TypeScript", "React"],
+    date: "2025-07-01",
     id: 7,
   },
   {
-    name: "Blog Platform",
-    description: "A minimal CMS built with Django and SQLite",
-    image: "blog.jpg",
-    link: "project8.html",
-    tags: ["Python", "Django", "SQLite"],
-    date: "2024-08-05",
+    name: "Project 8",
+    description: "Description of Project 8",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project8.html",
+    tags: ["Vue", "JavaScript"],
+    date: "2025-08-01",
     id: 8,
   },
   {
-    name: "Image Classifier",
-    description: "Prototype ML model for image classification",
-    image: "classifier.jpg",
-    link: "project9.html",
-    tags: ["Python", "TensorFlow", "ML"],
-    date: "2025-03-03",
+    name: "Project 9",
+    description: "Description of Project 9",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project9.html",
+    tags: ["Svelte", "CSS"],
+    date: "2025-09-01",
     id: 9,
   },
   {
-    name: "Task Scheduler",
-    description: "Background job scheduler with TypeScript and Node",
-    image: "scheduler.jpg",
-    link: "project10.html",
-    tags: ["TypeScript", "Node.js"],
-    date: "2024-10-18",
+    name: "Project 10",
+    description: "Description of Project 10",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project10.html",
+    tags: ["Fullstack", "MongoDB"],
+    date: "2025-10-01",
     id: 10,
   },
   {
-    name: "Game Engine Demo",
-    description: "Small demo built with Unity showcasing physics",
-    image: "game.jpg",
-    link: "project11.html",
-    tags: ["C#", "Unity"],
-    date: "2022-04-22",
+    name: "Project 11",
+    description: "Description of Project 11",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project11.html",
+    tags: ["Machine Learning", "Python"],
+    date: "2025-11-01",
     id: 11,
+  },
+  {
+    name: "Project 12",
+    description: "Description of Project 12",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project12.html",
+    tags: ["Data Viz", "D3"],
+    date: "2025-12-01",
+    id: 12,
+  },
+  {
+    name: "Project 13",
+    description: "Description of Project 13",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project13.html",
+    tags: ["Mobile", "React Native"],
+    date: "2026-01-01",
+    id: 13,
+  },
+  {
+    name: "Project 14",
+    description: "Description of Project 14",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project14.html",
+    tags: ["Game Dev", "Unity"],
+    date: "2026-02-01",
+    id: 14,
+  },
+  {
+    name: "Project 15",
+    description: "Description of Project 15",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project15.html",
+    tags: ["DevOps", "Docker"],
+    date: "2026-03-01",
+    id: 15,
+  },
+  {
+    name: "Project 16",
+    description: "Description of Project 16",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project16.html",
+    tags: ["ML Ops", "Kubernetes"],
+    date: "2026-04-01",
+    id: 16,
+  },
+    {
+    name: "Project 17",
+    description: "Description of Project 17",
+    imageStatic: "project1s.gif",
+    imageHover: "project1.gif",
+    link: "./projects/project17.html",
+    tags: ["ML Ops", "Kubernetes"],
+    date: "2026-04-01",
+    id: 17,
   },
 ];
 let filters = [];
@@ -121,13 +192,39 @@ uniquetags.forEach((tag) => {
         </div>
     `;
 });
-generateProjectCards(projects);
-console.log(uniquetags);
-const testbtn = document
-  .querySelector(".dropdown")
-  .addEventListener("click", function (event) {
-    console.log("clicked");
+
+function generateProjectCards(projects) {
+  const projectList = document.querySelector(".project-list");
+  projectList.innerHTML = "";
+  projects.forEach((project) => {
+    const projectItem = document.createElement("div");
+    projectItem.classList.add("project-item");
+    projectItem.innerHTML = `
+                <div class="project-item-${project.id}">
+                    <div class="project-title">
+                    <h3> ${project.name}</h3>
+                    </div>
+                    <p> ${project.description}</p>
+                    <div class="tags">
+                        ${project.tags.map((tag) => `<span class="tag">${tag} </span>`).join("")}
+                    </div>
+                </div>
+        `;
+    projectList.appendChild(projectItem);
+    projectItem.addEventListener("click", function (event) {
+      window.location.href = project.link;
+    });
+    projectItem.addEventListener("mouseover", function (event) {
+      projectItem.style.backgroundImage = `url(../assets/${project.imageHover})`;
+    });
+    projectItem.addEventListener("mouseout", function (event) {
+      projectItem.style.backgroundImage = `url(../assets/${project.imageStatic})`;
+    });
+    projectItem.style.backgroundImage = `url(../assets/${project.imageStatic})`;
   });
+}
+generateProjectCards(projects);
+
 let checkboxbtns=[];
 if (uniquetags.length > 0) {
   for (let i = 0; i < uniquetags.length; i ++) {
@@ -146,20 +243,3 @@ if (uniquetags.length > 0) {
     })
   }
 }
-
-function generateProjectCards(projects) {
-  const projectList = document.querySelector(".project-list");
-  projectList.innerHTML = "";
-  projects.forEach((project) => {
-    const projectItem = document.createElement("div");
-    projectItem.classList.add("project-item");
-    projectItem.innerHTML = `
-                <div class="project-item-${project.id}">
-                    <h3> ${project.name}</h3>
-                    <p> ${project.description}</p>
-                </div>
-        `;
-    projectList.appendChild(projectItem);
-  });
-}
-
