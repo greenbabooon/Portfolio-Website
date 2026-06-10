@@ -1,7 +1,7 @@
 //projects
 let projects = [];
-const actualProjectPath="./js/projectJsons/Actual-Projects.json";
-const fillerProjectPath="./js/projectJsons/fillerProjects.json";
+const actualProjectPath="../js/projectJsons/Actual-Projects.json";
+const fillerProjectPath="../js/projectJsons/fillerProjects.json";
 
 getProjects(actualProjectPath);
 getUniqueTags();
