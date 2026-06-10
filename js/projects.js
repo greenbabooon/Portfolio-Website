@@ -1,6 +1,7 @@
+//projects
 let projects = [];
-const actualProjectPath="/js/projectJsons/Actual-Projects.json";
-const fillerProjectPath="/js/projectJsons/fillerProjects.json";
+const actualProjectPath="../js/projectJsons/Actual-Projects.json";
+const fillerProjectPath="../js/projectJsons/fillerProjects.json";
 
 getProjects(actualProjectPath);
 getUniqueTags();
@@ -113,7 +114,7 @@ function generateProjectCards(projects) {
                     <div class="project-title">
                     <h3> ${project.name}</h3>
                     </div>
-                    <p> ${project.description}</p>
+                    
                     <div class="tags">
                         ${project.tags.map((tag) => `<span class="tag">${tag} </span>`).join("")}
                     </div>
@@ -124,12 +125,12 @@ function generateProjectCards(projects) {
       window.location.href = project.link;
     });
     projectItem.addEventListener("pointerenter", function (event) {
-      projectItem.style.backgroundImage = `url(../assets/${project.imageHover})`;
+      projectItem.style.backgroundImage = `url(${project.imageHover})`;
     });
     projectItem.addEventListener("pointerleave", function (event) {
-      projectItem.style.backgroundImage = `url(../assets/${project.imageStatic})`;
+      projectItem.style.backgroundImage = `url(${project.imageStatic})`;
     });
-    projectItem.style.backgroundImage = `url(../assets/${project.imageStatic})`;
+    projectItem.style.backgroundImage = `url(${project.imageStatic})`;
   });
 }
 
