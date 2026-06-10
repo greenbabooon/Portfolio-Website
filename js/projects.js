@@ -35,15 +35,6 @@ function getProjects(path){
   });
 }
 
-
-const themeToggle=document.querySelector(".theme-toggle").addEventListener("click",function(event){
-    if(event.target.checked){
-        document.documentElement.setAttribute("data-theme","dark");
-    }else{
-        document.documentElement.setAttribute("data-theme","light");
-    }
-});
-
 let filters = [];
 const projectList = document.querySelector(".project-list");
 
