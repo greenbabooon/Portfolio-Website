@@ -1,20 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header> <h1>Stephanos Loizos | Portfolio</h1> 
-        <ul><li><a >Home</a><li> <a href="./html/projects.html">projects</a></li><li><a href="./html/contact.html">contact</a></li></li></ul>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Welcome</h2>
-            <p>My name is Stephanos Loizos and this is my portfolio. Please take a look around and contact me if you have any questions.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephanos Loizos | Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/visual-handler.js" defer></script>
+    <script src="./js/home.js" defer></script>
+  </head>
+  <body>
+    <main class="container page-home">
+      <section class="intro-block text-paragraph">
+        <h2>About Me</h2>
+        <p>
+          I am a focused Game Designer and Front-End Developer dedicated to
+          creating emergent, player-driven experiences and highly optimized
+          systems. By combining systemic design methodologies within engines
+          like Unity with robust, standards-compliant web interfaces, I strive
+          to deliver clean mechanics and elegant UX frameworks.
+        </p>
+      </section>
+      <figure class="selfie">
+        <img src="./assets/selfie.jpg" alt="" />
+      </figure>
+      <section>
+        <p>    
+            text here
+        </p>
+      </section>
+      <section class="featured-showcase" id="glow">
+        <h3>Featured Dev Work</h3>
+        <div class="carousel-viewport" id="project-carousel">
+          <div
+            class="carousel-item"
+            data-project="Elemental-Adventure"
+            title="Click to view Elemental Adventure"
+          >
+            <a href="./html/projects.html?Zombie-Game"></a>
+            <img
+              src="https://i.postimg.cc/RFnVcb6H/Video-Project-1-gif.gif"
+              ,
+              alt="./html/projects.html?Elemental-Adventure"
+            />
+          </div>
+          <div
+            class="carousel-item"
+            data-project="Zombie-Game"
+            title="Click to view Zombie Game"
+          >
+            <a href="./html/projects.html?Zombie-Game"></a>
+            <img
+              src="https://i.postimg.cc/RV4bf62V/zombie-gif.gif"
+              alt="./html/projects.html?Zombie-Game"
+            />
+          </div>
         </div>
+      </section>
+
+      <section class="qualifications-brief text-paragraph">
+        <p>
+          My professional toolkit has been heavily reinforced by formal
+          university modules and independent development milestones. To see a
+          detailed timeline of my subjects, majors, and specialized external
+          certifications, you can explore my detailed
+          <a href="./html/qualifications.html" class="accent-link"
+            >Qualifications</a
+          >
+          profile, or check out my live interactive development cards directly
+          on the
+          <a href="./html/projects.html" class="accent-link">Projects</a> page.
+        </p>
+      </section>
     </main>
-</body>
+  </body>
 </html>
