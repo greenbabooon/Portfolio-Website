@@ -1,7 +1,6 @@
-
-let theme=sessionStorage.getItem("theme");
-if(theme){
-    document.documentElement.setAttribute("data-theme", theme);
+let theme = sessionStorage.getItem("theme");
+if (theme) {
+  document.documentElement.setAttribute("data-theme", theme);
 }
 
 let isScrolling;
@@ -19,38 +18,29 @@ const onScroll = document.addEventListener("scroll", () => {
     console.log("fade");
   }, 0);
 });
-const currentPage = window.location.pathname.split("/").pop();
-console.log(currentPage);
 
-const pages = [
-  {
-    name: "Home",
-    url: "./index.html",
-  },
-  {
-    name: "Projects",
-    url: "./projects.html",
-  },
-  {
-    name: "Contact",
-    url: "./contact.html",
-  },
-];
+
+const currentPath = window.location.pathname;
+const isAtRoot = !currentPath.includes("/html/");
+
+
+const basePrefix = isAtRoot ? "./html/" : "./";
+const rootPrefix = isAtRoot ? "./" : "../";
 
 function renderNavBar() {
   const navHTML = `
-    <header id="glow">
+    <header id=\"glow\">
       <h1>
-        <span class="accent">Stephanos Loizos</span> | Portfolio
+        <span class=\"accent\">Stephanos Loizos</span> | Portfolio
       </h1>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../projects.html">Projects</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="${rootPrefix}index.html">Home</a></li>
+        <li><a href="${rootPrefix}html/projects.html">Projects</a></li>
+        <li><a href="${rootPrefix}html/contact.html">Contact</a></li>
         <li>
-          <label class="switch">
-            <input class="theme-toggle" type="checkbox">
-            <span title="Toggle Theme" class="slider"></span>
+          <label class=\"switch\">
+            <input class=\"theme-toggle\" type=\"checkbox\">
+            <span title=\"Toggle Theme\" class=\"slider\"></span>
           </label>
         </li>
       </ul>
@@ -60,13 +50,12 @@ function renderNavBar() {
 }
 
 renderNavBar();
+
 const themeToggle = document
   .querySelector(".theme-toggle")
-  .addEventListener("click", function (event) {
-    if (event.target.checked) {
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-    sessionStorage.setItem("theme", document.documentElement.getAttribute("data-theme"));
+  .addEventListener("click", () => {
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+    let newTheme = currentTheme === "dark" ? "default" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    sessionStorage.setItem("theme", newTheme);
   });
