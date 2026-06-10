@@ -4,12 +4,14 @@
   --accent-color: #0798ff;
   --text-color: #333;
   --border-color: #d2d3db;
+  --box-shadow: 0px 0px 10px var(--text-color);
+  }
   [data-theme="dark"] {
-    --main-color: #333;
-    --secondary-color: #555;    
+    --main-color: #1e1e1e;
+    --secondary-color: #101010;    
     --accent-color: #c907ff;
     --text-color: #f8f9fa;
     --border-color: #d2d3db;
+    --box-shadow: 0px 0px 3px var(--text-color);
   }
   
-}

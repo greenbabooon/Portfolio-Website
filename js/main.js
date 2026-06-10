@@ -170,16 +170,25 @@ const projects = [
     id: 17,
   },
 ];
+const themeToggle=document.querySelector(".theme-toggle").addEventListener("click",function(event){
+    if(event.target.checked){
+        document.documentElement.setAttribute("data-theme","dark");
+    }else{
+        document.documentElement.setAttribute("data-theme","light");
+    }
+});
+
 let filters = [];
 const projectList = document.querySelector(".project-list");
-const uniquetags = projects.reduce((acc, project) => {
+
+const uniquetags = [];
+projects.forEach((project) => {
   project.tags.forEach((tag) => {
-    if (!acc.tags.includes(tag)) {
-      acc.tags.push(tag);
+    if (!uniquetags.includes(tag)) {
+      uniquetags.push(tag);
     }
   });
-  return acc;
-}).tags;
+});
 
 const filterDiv = document.querySelector(".dropdown-content");
 filterDiv.innerHTML = "";

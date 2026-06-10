@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme=default>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/main.js"defer></script>
+    <script src="../js/main.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h1><div class = "accent">Stephanos Loizos</div> | Portfolio</h1>
+        <h1>
+            <div class="accent">Stephanos Loizos</div> | Portfolio
+        </h1>
         <ul>
             <li><a href="../index.html">Home</a>
             <li> <a>projects</a></li>
             <li><a href="./contact.html">contact</a></li>
+            <li> <label class="switch">
+                    <input class ="theme-toggle"type="checkbox">
+                    <span class="slider"></span>
+                </label></li>
             </li>
         </ul>
     </header>
     <main>
         <div class="project-interface">
-            <div class ="project-options">
-            <h2>Projects</h2>
-            <select name="sort" id="sort">sort
-                <option value="name">name</option>
-                <option value="date">date</option>
-            </select>
-            <div class="dropdown">
-                <button class="dropbtn">filter options</button>
-                <div class="dropdown-content">
+            <div class="project-options">
+                <h2>Projects</h2>
+                <select name="sort" id="sort">sort
+                    <option value="name">name</option>
+                    <option value="date">date</option>
+                </select>
+                <div class="dropdown">
+                    <button class="dropbtn">filter options</button>
+                    <div class="dropdown-content">
+                    </div>
                 </div>
+                <label class="toggle-filler" for="toggle-filler">toggle filler projects</label>
+                <input type="checkbox" id="toggle-filler" />
             </div>
-        </div>
             <div class="project-list">
             </div>
         </div>
