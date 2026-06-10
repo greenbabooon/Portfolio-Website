@@ -11,7 +11,7 @@
     "about this game": "sdfasfasfasf",
     "technical details": "sdfasdfasfasfas",
     "download link": "sdfasffasfd",
-    "contributors": "asdfasfasfasf",
+    "contributors": "Stephanos Loizos",
     "id": 1
   },
   {
@@ -19,14 +19,14 @@
     "description": "simple tank game. enemies rush towards you. shoot as many as you can to get the highest score",
     "imageStatic": "https://i.postimg.cc/VsBKYsvx/bloxck.png",
     "imageHover": "https://i.postimg.cc/BvVdBSHB/block-vid.gif",
-    "videoLink": "",
+    "videoLink": "https://youtu.be/KZkX72VbXP4",
     "query": "Tank-MicroGame",
     "tags": ["C#", "Unity", "Game Dev"],
     "date": "2026-02-28",
     "about this game": "",
     "technical details": "",
     "download link": "",
-    "contributors": "",
+    "contributors": "Stephanos Loizos",
     "id": 2
   },
   {
@@ -34,14 +34,14 @@
     "description": "simple platformer game. player must get to the plag to advance.",
     "imageStatic": "https://i.postimg.cc/HkHcTHJR/ballin.png",
     "imageHover": "https://i.postimg.cc/gkGmJ0D3/baaling.gif",
-    "videoLink": "",
+    "videoLink": "https://youtu.be/NmFytEL2rUo",
     "query": "Ballin-Around",
     "tags": ["Scratch", "Game Dev"],
     "date": "2017-08-01",
     "about this game": "",
     "technical details": "",
     "download link": "",
-    "contributors": "",
+    "contributors": "Stephanos Loizos",
     "id": 3
   },
   {
@@ -49,14 +49,14 @@
     "description": "In this game you take the role of an akward teenager so afriad of asking out his crush he lands up causing a zombie apocalypse. Only he has the power to save the world",
     "imageStatic": "https://i.postimg.cc/7ZLstvxp/Screenshot-2026-06-10-130425.png",
     "imageHover": "https://i.postimg.cc/RV4bf62V/zombie-gif.gif",
-    "videoLink": "",
+    "videoLink": "https://youtu.be/4iNNpUd281I",
     "query": "Zombie-Game",
     "tags": ["C#", "Unity", "Blender", "Game Dev"],
     "date": "2025-11-10",
     "about this game": "",
     "technical details": "",
     "download link": "",
-    "contributors": "",
+    "contributors": "Stephanos Loizos, Christopher Bekenstrater, Mirha Sukraj",
     "id": 4
   },
   {
@@ -64,14 +64,14 @@
     "description": "In this game you find your self as a robot in the lab of a mad scientist. use the abilities you have access to to escape the lab",
     "imageStatic": "https://i.postimg.cc/HW29qSPV/aaron.png",
     "imageHover": "https://i.postimg.cc/43qSh8TX/retep-game-gif.gif",
-    "videoLink": "",
+    "videoLink": "https://youtu.be/xIe0IxwlPtE",
     "query": "AARON",
     "tags": ["C#", "Unity", "Krita", "Game Dev"],
     "date": "2025-11-10",
     "about this game": "",
     "technical details": "",
     "download link": "",
-    "contributors": "",
+    "contributors": "Stephanos Loizos, Willson Motileng, Kyle Mushau",
     "id": 5
   },
   {
@@ -86,7 +86,7 @@
     "about this game": "",
     "technical details": "",
     "download link": "",
-    "contributors": "",
+    "contributors": "Stephanos Loizos",
     "id": 6
   }
 ]
