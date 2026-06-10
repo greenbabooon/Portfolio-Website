@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Elemental Adventure",
+    "description": "In this game, you are bestowed with a gun that can fire any element you can come across use it and defeat the malice that looms",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["C#", "Unity", "Game Dev"],
+    "date": "2026-06-01",
+    "id": 1
+  },
+  {
+    "name": "Tank microgame",
+    "description": "simple tank game. enemies rush towards you. shoot as many as you can to get the highest score",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["C#", "Unity", "Game Dev"],
+    "date": "2026-02-28",
+    "id": 2
+  },
+    {
+    "name": "Ballin Around",
+    "description": "simple platformer game. player must get to the plag to advance.",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["Scratch", "Game Dev"],
+    "date": "2017-08-01",
+    "id": 3
+  },
+  {
+    "name": "My Highschool Prom Got Interrupted By Zombies From My Imagination And Now I Need To Save the World",
+    "description": "In this game you take the role of an akward teenager so afriad of asking out his crush he lands up causing a zombie apocalypse. Only he has the power to save the world",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["C#", "Unity","Blender", "Game Dev"],
+    "date": "2025-11-10",
+    "id": 4
+  },
+  {
+    "name": "A.A.R.O.N",
+    "description": "In this game you find your self as a robot in the lab of a mad scientist. use the abilities you have access to to escape the lab",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["C#", "Unity","Krita", "Game Dev"],
+    "date": "2025-11-10",
+    "id": 5
+  },
+  {
+    "name": "Portfolio-Website",
+    "description": "This is the website you are currently on, it was made from scratch using HTML, CSS and JS",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["JavaScript", "HTML", "CSS", "WebDev"],
+    "date": "2025-11-10",
+    "id": 6
+  }
+]

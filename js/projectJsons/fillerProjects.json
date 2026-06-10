@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Project 1",
+    "description": "Description of Project 1",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project1.html",
+    "tags": ["JavaScript", "HTML", "CSS"],
+    "date": "2025-01-01",
+    "id": 1
+  },
+  {
+    "name": "Project 2",
+    "description": "Description of Project 2",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project2.html",
+    "tags": ["React", "CSS"],
+    "date": "2025-02-01",
+    "id": 2
+  },
+  {
+    "name": "Project 3",
+    "description": "Description of Project 3",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project3.html",
+    "tags": ["HTML", "CSS"],
+    "date": "2025-03-01",
+    "id": 3
+  },
+  {
+    "name": "Project 4",
+    "description": "Description of Project 4",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project4.html",
+    "tags": ["Node.js", "Express"],
+    "date": "2025-04-01",
+    "id": 4
+  },
+  {
+    "name": "Project 5",
+    "description": "Description of Project 5",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project5.html",
+    "tags": ["Python", "Flask"],
+    "date": "2025-05-01",
+    "id": 5
+  },
+  {
+    "name": "Project 6",
+    "description": "Description of Project 6",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project6.html",
+    "tags": ["Django", "Python"],
+    "date": "2025-06-01",
+    "id": 6
+  },
+  {
+    "name": "Project 7",
+    "description": "Description of Project 7",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project7.html",
+    "tags": ["TypeScript", "React"],
+    "date": "2025-07-01",
+    "id": 7
+  },
+  {
+    "name": "Project 8",
+    "description": "Description of Project 8",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project8.html",
+    "tags": ["Vue", "JavaScript"],
+    "date": "2025-08-01",
+    "id": 8
+  },
+  {
+    "name": "Project 9",
+    "description": "Description of Project 9",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project9.html",
+    "tags": ["Svelte", "CSS"],
+    "date": "2025-09-01",
+    "id": 9
+  },
+  {
+    "name": "Project 10",
+    "description": "Description of Project 10",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project10.html",
+    "tags": ["Fullstack", "MongoDB"],
+    "date": "2025-10-01",
+    "id": 10
+  },
+  {
+    "name": "Project 11",
+    "description": "Description of Project 11",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project11.html",
+    "tags": ["Machine Learning", "Python"],
+    "date": "2025-11-01",
+    "id": 11
+  },
+  {
+    "name": "Project 12",
+    "description": "Description of Project 12",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project12.html",
+    "tags": ["Data Viz", "D3"],
+    "date": "2025-12-01",
+    "id": 12
+  },
+  {
+    "name": "Project 13",
+    "description": "Description of Project 13",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project13.html",
+    "tags": ["Mobile", "React Native"],
+    "date": "2026-01-01",
+    "id": 13
+  },
+  {
+    "name": "Project 14",
+    "description": "Description of Project 14",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project14.html",
+    "tags": ["Game Dev", "Unity"],
+    "date": "2026-02-01",
+    "id": 14
+  },
+  {
+    "name": "Project 15",
+    "description": "Description of Project 15",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project15.html",
+    "tags": ["DevOps", "Docker"],
+    "date": "2026-03-01",
+    "id": 15
+  },
+  {
+    "name": "Project 16",
+    "description": "Description of Project 16",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project16.html",
+    "tags": ["ML Ops", "Kubernetes"],
+    "date": "2026-04-01",
+    "id": 16
+  },
+  {
+    "name": "Project 17",
+    "description": "Description of Project 17",
+    "imageStatic": "project1s.gif",
+    "imageHover": "project1.gif",
+    "link": "./projects/project17.html",
+    "tags": ["ML Ops", "Kubernetes"],
+    "date": "2026-04-01",
+    "id": 17
+  }
+]
