@@ -1,4 +1,3 @@
-//projects
 let projects = [];
 const actualProjectPath = "../js/projectJsons/Actual-Projects.json";
 const fillerProjectPath = "../js/projectJsons/fillerProjects.json";
@@ -41,11 +40,9 @@ const projectList = document.querySelector(".project-list");
 
 const uniquetags = [];
 
-// Call this after projects is updated
 function updateFiltersAndRender() {
-  // compute unique tags
   const tags = Array.from(new Set(projects.flatMap((p) => p.tags || [])));
-  // render checkboxes
+
   const filterDiv = document.querySelector(".dropdown-content");
   filterDiv.innerHTML = tags
     .map((tag) => {
