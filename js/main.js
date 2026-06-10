@@ -214,10 +214,10 @@ function generateProjectCards(projects) {
     projectItem.addEventListener("click", function (event) {
       window.location.href = project.link;
     });
-    projectItem.addEventListener("mouseover", function (event) {
+    projectItem.addEventListener("pointerenter", function (event) {
       projectItem.style.backgroundImage = `url(../assets/${project.imageHover})`;
     });
-    projectItem.addEventListener("mouseout", function (event) {
+    projectItem.addEventListener("pointerleave", function (event) {
       projectItem.style.backgroundImage = `url(../assets/${project.imageStatic})`;
     });
     projectItem.style.backgroundImage = `url(../assets/${project.imageStatic})`;

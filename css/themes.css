@@ -1,8 +1,15 @@
 :root {
-  --main-color: #f8f9fa;
-  --accent-color: #07ff07;
+  --main-color: #a4b3b9;
+  --secondary-color: #e9ecef;
+  --accent-color: #0798ff;
   --text-color: #333;
   --border-color: #d2d3db;
-  
+  [data-theme="dark"] {
+    --main-color: #333;
+    --secondary-color: #555;    
+    --accent-color: #c907ff;
+    --text-color: #f8f9fa;
+    --border-color: #d2d3db;
+  }
   
 }
