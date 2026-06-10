@@ -14,30 +14,38 @@ header {
   padding: 1rem;
   text-align: left;
   font-size: 1.5rem;
-  flex-wrap: nowrap;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 1rem;       
+}
 
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
+header h1 {
+  font-size: 1.25rem;
+  white-space: nowrap; 
+}
 
-    li {
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-        color: var(--accent-color);
-      }
-
-      a {
-        color: var(--text-color);
-        text-decoration: none;
-      }
-    }
-  }
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  flex-wrap: wrap;    
+  gap: 1.25rem;        
+  margin: 0;
+  padding: 0;
+  font-size: 1.15rem;  
+}
+header a{
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+header a:hover {
+  color: var(--accent-color);
 }
 
 body {
