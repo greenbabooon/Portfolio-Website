@@ -175,7 +175,7 @@ body {
 
   .project-options {
     background-color: var(--secondary-color);
-    width: 90%;
+    width: 120%;
     max-width: 1000px;
     display: flex;
     justify-content: left;
@@ -530,7 +530,7 @@ input:focus-visible + .slider {
     background-color: var(--main-color);
     padding: 1.5rem;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
 }
 
 .featured-showcase h3 {
@@ -592,6 +592,5 @@ input:focus-visible + .slider {
 }
 .tech{
   background: var(--main-color); 
-  padding: 0.4rem 0.8rem; border-radius: 4px; 
-  font-size: 0.85rem; font-weight: bold
+  padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: bold
 }
