@@ -1,39 +1,39 @@
 //projects
 let projects = [];
-const actualProjectPath="../js/projectJsons/Actual-Projects.json";
-const fillerProjectPath="../js/projectJsons/fillerProjects.json";
+const actualProjectPath = "../js/projectJsons/Actual-Projects.json";
+const fillerProjectPath = "../js/projectJsons/fillerProjects.json";
 
 getProjects(actualProjectPath);
 getUniqueTags();
 generateProjectCards(projects);
 
-const toggle = document.querySelector(".toggle-filler").
-addEventListener("click", function () {
-  if (event.target.checked) {
-    getProjects(fillerProjectPath);
-  } else {
-    getProjects(actualProjectPath);
-  }
-  console.log(projects);
-  
-});
-function getProjects(path){
-    fetch(path)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+const toggle = document
+  .querySelector(".toggle-filler")
+  .addEventListener("click", function () {
+    if (event.target.checked) {
+      getProjects(fillerProjectPath);
+    } else {
+      getProjects(actualProjectPath);
     }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data); 
-    projects=data;
-    updateFiltersAndRender();
-    generateProjectCards(projects);
-  })
-  .catch(error => {
-    console.error('There was a problem fetching the data:', error);
+    console.log(projects);
   });
+function getProjects(path) {
+  fetch(path)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      projects = data;
+      updateFiltersAndRender();
+      generateProjectCards(projects);
+    })
+    .catch((error) => {
+      console.error("There was a problem fetching the data:", error);
+    });
 }
 
 let filters = [];
@@ -44,24 +44,24 @@ const uniquetags = [];
 // Call this after projects is updated
 function updateFiltersAndRender() {
   // compute unique tags
-  const tags = Array.from(new Set(projects.flatMap(p => p.tags || [])));
+  const tags = Array.from(new Set(projects.flatMap((p) => p.tags || [])));
   // render checkboxes
   const filterDiv = document.querySelector(".dropdown-content");
-  filterDiv.innerHTML = tags.map(tag => {
-    const safeId = `filterBox-${tag.replace(/\s+/g, "_")}`;
-    return `
+  filterDiv.innerHTML = tags
+    .map((tag) => {
+      const safeId = `filterBox-${tag.replace(/\s+/g, "_")}`;
+      return `
       <div class="filter-item">
         <label for="${safeId}">${tag}</label>
         <input type="checkbox" id="${safeId}" value="${tag}">
       </div>
     `;
-  }).join("");
+    })
+    .join("");
 
-  // reset filters state
   filters = [];
 
-  // attach listeners
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     const safeId = `filterBox-${tag.replace(/\s+/g, "_")}`;
     const el = document.getElementById(safeId);
     if (!el) return;
@@ -69,27 +69,26 @@ function updateFiltersAndRender() {
       if (event.target.checked) {
         filters.push(event.target.value);
       } else {
-        filters = filters.filter(f => f !== event.target.value);
+        filters = filters.filter((f) => f !== event.target.value);
       }
-      const filteredProjects = projects.filter(project => {
+      const filteredProjects = projects.filter((project) => {
         if (filters.length === 0) return true;
-        return project.tags && project.tags.some(t => filters.includes(t));
+        return project.tags && project.tags.some((t) => filters.includes(t));
       });
       generateProjectCards(filteredProjects);
     });
   });
 }
-uniqueTags=[];
+uniqueTags = [];
 function getUniqueTags() {
-projects.forEach((project) => {
-  project.tags.forEach((tag) => {
-    if (!uniquetags.includes(tag)) {
-      uniquetags.push(tag);
-    }
+  projects.forEach((project) => {
+    project.tags.forEach((tag) => {
+      if (!uniquetags.includes(tag)) {
+        uniquetags.push(tag);
+      }
+    });
   });
-});
 }
-
 
 const filterDiv = document.querySelector(".dropdown-content");
 filterDiv.innerHTML = "";
@@ -122,7 +121,8 @@ function generateProjectCards(projects) {
         `;
     projectList.appendChild(projectItem);
     projectItem.addEventListener("click", function (event) {
-      window.location.href = project.link;
+      console.log(`./project.html?${project.query}`);
+      window.location.href = `./project.html?${project.query}`;
     });
     projectItem.addEventListener("pointerenter", function (event) {
       projectItem.style.backgroundImage = `url(${project.imageHover})`;
@@ -134,21 +134,25 @@ function generateProjectCards(projects) {
   });
 }
 
-let checkboxbtns=[];
+let checkboxbtns = [];
 if (uniquetags.length > 0) {
-  for (let i = 0; i < uniquetags.length; i ++) {
-    checkboxbtns[i]=document.getElementById("filterBox-"+uniquetags[i]).addEventListener("change",function(event){
-        if(event.target.checked){
-            filters.push(event.target.value);
-        }else{            filters=filters.filter((filter)=>filter!==event.target.value);
-        }        console.log(filters);
+  for (let i = 0; i < uniquetags.length; i++) {
+    checkboxbtns[i] = document
+      .getElementById("filterBox-" + uniquetags[i])
+      .addEventListener("change", function (event) {
+        if (event.target.checked) {
+          filters.push(event.target.value);
+        } else {
+          filters = filters.filter((filter) => filter !== event.target.value);
+        }
+        console.log(filters);
         const filteredProjects = projects.filter((project) => {
-            if (filters.length === 0) {
-              return true;
-            }
-            return project.tags.some((tag) => filters.includes(tag));
-          });
+          if (filters.length === 0) {
+            return true;
+          }
+          return project.tags.some((tag) => filters.includes(tag));
+        });
         generateProjectCards(filteredProjects);
-    })
+      });
   }
 }

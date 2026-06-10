@@ -1,53 +1,40 @@
-<!DOCTYPE html>
-<html lang="en" data-theme=default>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+<!doctype html>
+<html lang="en" data-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/projects.js" defer></script>
     <script src="../js/visual-handler.js" defer></script>
     <title>Stephanos Loizos | Portfolio | Projects</title>
-</head>
+  </head>
 
-<body>
-    <header id="glow">
-        <h1>
-            <span class="accent">Stephanos Loizos</span> | Portfolio
-        </h1>
-        <ul>
-            <li><a href="../index.html">Home</a>
-            <li> <a>projects</a></li>
-            <li><a href="./contact.html">contact</a></li>
-            <li>    <label class="switch">
-                    <input class ="theme-toggle"type="checkbox">
-                    <span title="Toggle Theme" class="slider"></span>
-                </label></li>
-            </li>
-        </ul>
-    </header>
+  <body>
     <main>
-        <div class="project-interface">
-            <div class="project-options">
-                <h2>Projects</h2>
-                <select name="sort" id="sort">sort
-                    <option value="name">name</option>
-                    <option value="date">date</option>
-                </select>
-                <div class="dropdown">
-                    <button class="dropbtn">filter options</button>
-                    <div class="dropdown-content">
-                    </div>
-                </div>
-                <label title="This is used to populate the page with filler projects to show that the page can update both project cards and filter options dynamically" class="toggle-filler" for="toggle-filler"> <p>toggle-filler-projects</p>
-                <input type="checkbox" id="toggle-filler" />
-                <span class="slider"></span>
-            </label>
-            </div>
-            <div class="project-list" id="glow">
-            </div>
+      <div class="project-interface">
+        <div class="project-options">
+          <h2>Projects</h2>
+          <select name="sort" id="sort">
+            sort
+            <option value="name">name</option>
+            <option value="date">date</option>
+          </select>
+          <div class="dropdown">
+            <button class="dropbtn">filter options</button>
+            <div class="dropdown-content"></div>
+          </div>
+          <label
+            title="This is used to populate the page with filler projects to show that the page can update both project cards and filter options dynamically"
+            class="toggle-filler"
+            for="toggle-filler"
+          >
+            <p>toggle-filler-projects</p>
+            <input type="checkbox" id="toggle-filler" />
+            <span class="slider"></span>
+          </label>
         </div>
+        <div class="project-list" id="glow"></div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>

@@ -2,11 +2,16 @@
   {
     "name": "Elemental Adventure",
     "description": "In this game, you are bestowed with a gun that can fire any element you can come across use it and defeat the malice that looms",
-    "imageStatic":" https://i.postimg.cc/4ymRTKZT/Screenshot-2026-06-10-130044.png",
+    "imageStatic": " https://i.postimg.cc/4ymRTKZT/Screenshot-2026-06-10-130044.png",
     "imageHover": "https://i.postimg.cc/RFnVcb6H/Video-Project-1-gif.gif",
-    "link": "./projects/project1.html",
+    "videoLink": "https://youtu.be/RLrMTeiLWvo",
+    "query": "Elemental-Adventure",
     "tags": ["C#", "Unity", "Game Dev"],
     "date": "2026-06-01",
+    "about this game": "sdfasfasfasf",
+    "technical details": "sdfasdfasfasfas",
+    "download link": "sdfasffasfd",
+    "contributors": "asdfasfasfasf",
     "id": 1
   },
   {
@@ -14,17 +19,17 @@
     "description": "simple tank game. enemies rush towards you. shoot as many as you can to get the highest score",
     "imageStatic": "https://i.postimg.cc/VsBKYsvx/bloxck.png",
     "imageHover": "https://i.postimg.cc/BvVdBSHB/block-vid.gif",
-    "link": "./projects/project1.html",
+    "query": "Elemental Adventure",
     "tags": ["C#", "Unity", "Game Dev"],
     "date": "2026-02-28",
     "id": 2
   },
-    {
+  {
     "name": "Ballin Around",
     "description": "simple platformer game. player must get to the plag to advance.",
     "imageStatic": "https://i.postimg.cc/HkHcTHJR/ballin.png",
     "imageHover": "https://i.postimg.cc/gkGmJ0D3/baaling.gif",
-    "link": "./projects/project1.html",
+    "query": "Elemental Adventure",
     "tags": ["Scratch", "Game Dev"],
     "date": "2017-08-01",
     "id": 3
@@ -34,8 +39,8 @@
     "description": "In this game you take the role of an akward teenager so afriad of asking out his crush he lands up causing a zombie apocalypse. Only he has the power to save the world",
     "imageStatic": "https://i.postimg.cc/7ZLstvxp/Screenshot-2026-06-10-130425.png",
     "imageHover": "https://i.postimg.cc/RV4bf62V/zombie-gif.gif",
-    "link": "./projects/project1.html",
-    "tags": ["C#", "Unity","Blender", "Game Dev"],
+    "query": "Elemental Adventure",
+    "tags": ["C#", "Unity", "Blender", "Game Dev"],
     "date": "2025-11-10",
     "id": 4
   },
@@ -44,8 +49,8 @@
     "description": "In this game you find your self as a robot in the lab of a mad scientist. use the abilities you have access to to escape the lab",
     "imageStatic": "https://i.postimg.cc/HW29qSPV/aaron.png",
     "imageHover": "https://i.postimg.cc/43qSh8TX/retep-game-gif.gif",
-    "link": "./projects/project1.html",
-    "tags": ["C#", "Unity","Krita", "Game Dev"],
+    "query": "Elemental Adventure",
+    "tags": ["C#", "Unity", "Krita", "Game Dev"],
     "date": "2025-11-10",
     "id": 5
   },
@@ -54,7 +59,7 @@
     "description": "This is the website you are currently on, it was made from scratch using HTML, CSS and JS",
     "imageStatic": "../assets/project1s.gif",
     "imageHover": "../assets/project1.gif",
-    "link": "./projects/project1.html",
+    "query": "Elemental Adventure",
     "tags": ["JavaScript", "HTML", "CSS", "WebDev"],
     "date": "2025-11-10",
     "id": 6
